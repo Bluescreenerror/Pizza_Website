@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vector Pizza</title>
+    <meta name="description" content="Pizza Website">
+    <meta name="robots" content="noindex, nofollow">
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="./CSS/style.css">
+    <!-- Linking Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Lugrasimo&family=Mynerve&family=Roboto:wght@700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Content container to hold the entire page content -->
+    <div class="content-container">
+        <!-- Header section -->
+        <header>
+            <!-- Navigation menu -->
+            <nav>
+                <!-- Logo and site name -->
+                <div>
+                    <img src="./Images/Pizza-logo-vector-PNG-veed-remove-background.png" alt="Pizza logo">
+                    <a href="index.html">Vector's <span>Pizzeria</span></a>
+                </div>
+                <!-- Links in the navigation menu -->
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="carryout.html">Delivery</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Form for pizza delivery -->
+        <form class="form-delivery">
+            <!-- Pizza details section -->
+            <div class="pizza-form">
+                <!-- Base options -->
+                <div>
+                    <p>Build your own pizza</p>
+                    <p class="info-form" id="info-form">*Est. delivery time of delivery is 15 minutes</p>
+                    <p class="info-form" id="info-form-bottom">Carryout orders must be placed 15 minutes before the
+                        store's closing time.</p>
+                    <p>Base</p>
+                    <label for="hand-tossed">Hand Tossed</label>
+                    <input type="radio" id="hand-tossed" name="base" value="Hand Tossed">
+                    <label for="thin-crust">Crunchy Thin Crust</label>
+                    <input type="radio" id="thin-crust" name="base" value="Crunchy Thin Crust">
+                    <label for="gluten-free">Gluten-Free Crust</label>
+                    <input type="radio" id="gluten-free" name="base" value="Gluten-Free Crust">
+                    <label for="hand-thin">Hand Tossed Thin</label>
+                    <input type="radio" id="hand-thin" name="base" value="Hand Tossed Thin">
+                </div>
+                <!-- Toppings options -->
+                <div class="toppings">
+                    <p>Toppings</p>
+                    <label for="jalapeno">Jalapeno</label>
+                    <input type="checkbox" id="jalapeno">
+                    <label for="pepperoni">Pepperoni</label>
+                    <input type="checkbox" id="pepperoni">
+                    <label for="extracheese">Extra Cheese</label>
+                    <input type="checkbox" id="extracheese">
+                    <label for="pineapple">Pineapple</label>
+                    <input type="checkbox" id="pineapple">
+                    <label for="bellpepper">Bell Pepper</label>
+                    <input type="checkbox" id="bellpepper">
+                    <label for="onions">Onions</label>
+                    <input type="checkbox" id="onions">
+                    <label for="mushroom">Mushrooms</label>
+                    <input type="checkbox" id="mushroom">
+                </div>
+                <!-- Drinks options -->
+                <div class="drinks">
+                    <p>Drinks</p>
+                    <label for="coke">Coca-Cola</label>
+                    <input type="checkbox" id="coke">
+                    <label for="Sprite">Sprite</label>
+                    <input type="checkbox" id="Sprite">
+                    <label for="Fanta">Fanta</label>
+                    <input type="checkbox" id="Fanta">
+                    <label for="OrangeJuice">Orange Juice</label>
+                    <input type="checkbox" id="OrangeJuice">
+                    <label for="IceTea">Ice Tea</label>
+                    <input type="checkbox" id="IceTea">
+                    <label for="RootBeer">Root Beer</label>
+                    <input type="checkbox" id="RootBeer">
+                </div>
+            </div>
+            <!-- Customer information section -->
+            <div class="name-input">
+                <div>
+                    <label for="fname">Firse Name:</label>
+                    <input type="text" name="fname" id="fname" placeholder="FirstName" required>
+                </div>
+                <div>
+                    <label for="lname">Last Name:</label>
+                    <input type="text" name="lname" id="lname" placeholder="LastName" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="1234@gmail.com" required>
+                </div>
+                <div>
+                    <label for="tel">Telephone:</label>
+                    <input type="tel" name="tel" id="tel" placeholder="(123)-456-7890" required>
+                </div>
+            </div>
+            <!-- Location selection -->
+            <div class="location">
+                <label for="location">Enter Location: </label>
+                <select name="location" id="location">
+                    <option value="Barrie">423 Bayfield, Barrie</option>
+                    <option value="Caledon">1651 Airport Rd, Caledon East</option>
+                    <option value="Georgetown">333 Guelph St, Georgetown</option>
+                </select>
+            </div>
+            <!-- Payment selection -->
+            <div class="payment">
+                <label for="payement">Enter Payment Type: </label>
+                <select name="payment" id="payment">
+                    <option value="Visa">Visa</option>
+                    <option value="Cash">Cash</option>
+                    <option value="PayPal">PayPal</option>
+                </select>
+            </div>
+            <!-- Form submission buttons -->
+            <div class="buttons">
+                <input name="form" type="submit" value="Order">
+                <input type="reset" name="reset" id="reset">
+            </div>
+        </form>
+    </div>
+    <!-- Footer section -->
+    <footer>
+        <p>
+            Pricing may vary by location. An additional charge may apply for premium toppings, sauces, extra cheese,
+            and special pizza types including: Handmade Pan Pizzas, Thin Crust Pizzas, Gluten Free Pizzas and Feast
+            Pizzas.
+
+            Please refer to offer when ordering. Limited time. Prices, participation, delivery area, terms and charges
+            may vary.
+
+            According to our most recent assessment of scientific data, foods containing gluten levels not exceeding 20
+            PPM would not pose a health risk to the vast majority of individuals with Celiac Disease or to individuals
+            with gluten sensitivity. The level of gluten found in our pizza made with Gluten Free Crust is below 20 PPM.
+            However, Our pizza made with a Gluten Free Crust is prepared in a common kitchen with the risk of
+            gluten exposure. Therefore, we DO NOT recommend this pizza for customers with Celiac Disease.
+            Customers with gluten sensitivities should exercise judgement in consuming this pizza.
+
+            Due to baking quality, limit of 10 toppings per pizza.
+        </p>
+        <p class="footer-heading">Like our Pizzas?</p>
+        <p class="footer-text">Find us on Instagram: <a href="Instagram.com">VectorsPizzeria</a></p>
+    </footer>
+</body>
+
+</html>
