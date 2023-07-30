@@ -1,0 +1,599 @@
+/* Set the default styles for the entire page */
+body {
+    margin: 0px;
+    background-color: rgb(38, 38, 38);
+    text-shadow: 1px 1px 2px red, 1px 1px 2px blue;
+}
+
+/* Container for the main content area */
+.content-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+/* Styles for selected text */
+*::selection {
+    background-color: #b61f1f;
+}
+
+/* Styles for the header */
+header {
+    font-weight: 700;
+}
+
+/* Styles for the logo link inside the header */
+header div a {
+    font-family: 'Lugrasimo', cursive;
+    font-size: 2em;
+    color: #fddf48;
+    margin: 0px;
+    letter-spacing: -0.05em;
+    padding-left: 0.1em;
+    text-decoration: none;
+    transition: letter-spacing 1s;
+}
+
+/* Styles for the span elements inside h1 tags */
+h1 span {
+    color: #fddf48;
+}
+
+/* Styles for the logo link on hover */
+header div a:hover {
+    cursor: pointer;
+    letter-spacing: 0em;
+}
+
+/* Styles for the navigation bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px #b61f1f solid;
+    background-color: #1E2D2F;
+    height: 120px;
+}
+
+/* Styles for the logo and other elements inside the navigation bar */
+nav div {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 0.1em;
+}
+
+/* Styles for the unordered list in the navigation bar */
+nav ul {
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Styles for the list items in the navigation bar */
+nav li {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    margin-right: 4em;
+}
+
+/* Styles for the links in the navigation bar */
+nav li a {
+    font-family: 'Mynerve', cursive;
+    display: block;
+    font-size: 2em;
+    text-decoration: none;
+    border: 2px solid #b61f1f;
+    padding: 0.04em 0.4em;
+    color: rgb(214, 211, 38);
+    background-color: #FC7A1E;
+    transition: color 1s, background-color 0.25s, transform 0.2s;
+}
+
+/* Styles for the links in the navigation bar on hover */
+nav li a:hover {
+    cursor: pointer;
+    color: #b61f1f;
+    background-color: #fddf48;
+    transform: translateY(-5px);
+}
+
+/* Styles for images in the page */
+img {
+    width: auto;
+    height: 130px;
+}
+
+/* Styles for the hero section */
+.hero {
+    font-family: 'Amatic SC', cursive;
+    text-align: center;
+    color: #FC7A1E;
+}
+
+/* Styles for h1 tags inside the hero section */
+.hero h1 {
+    font-size: 4em;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 0.5em;
+    letter-spacing: 0.1em;
+}
+
+/* Styles for p tags inside the hero section */
+.hero p {
+    padding: 0px;
+    margin: 0px;
+    color: #fddf48;
+    font-size: 2em;
+    letter-spacing: 0em;
+    font-family: 'Mynerve', cursive;
+}
+
+/* Styles for the big-image section */
+.big-image div {
+    font-family: 'Amatic SC', cursive;
+    width: 40%;
+    height: 100%;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-shadow: 4px 2px 5px #1E2D2F;
+}
+
+/* Styles for h2 tags inside the big-image section */
+.big-image h2 {
+    color: #FC7A1E;
+    font-size: 5em;
+    text-align: center;
+    margin: 0;
+}
+
+/* Styles for p tags inside the big-image section */
+.big-image p {
+    color: #fddf48;
+    font-size: 1.9em;
+    text-align: center;
+    margin: 0;
+}
+
+/* Styles for .pricecn class inside the big-image section */
+.big-image .pricecn {
+    font-size: 4em;
+}
+
+/* Styles for span elements inside the big-image section */
+.big-image span {
+    color: #FC7A1E;
+}
+
+/* Styles for the small-image-1 section */
+.small-image-1 {
+    background-image: url(../Images/AnyCrust_side.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* Styles for the small-image-1 section content */
+.small-image-1 div {
+    font-family: 'Amatic SC', cursive;
+    width: 50%;
+    height: 100%;
+    margin: 0px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-shadow: 1px 2px #1E2D2F;
+}
+
+/* Styles for h2 tags inside the small-image-1 section */
+.small-image-1 div h2 {
+    margin: 0;
+    font-size: 3em;
+    color: #fddf48;
+}
+
+/* Styles for p tags inside the small-image-1 section */
+.small-image-1 div > p {
+    margin: 0;
+    font-size: 1.4em;
+    color: #FC7A1E;
+}
+
+/* Additional styles for the second p tag inside the small-image-1 section */
+.small-image-1 div > p + p {
+    font-size: 0.8em;
+}
+
+/* Styles for the small-image-2 section */
+.small-image-2 {
+    background-image: url(../Images/large_feast_side.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* Styles for the small-image-2 section content */
+.small-image-2 div {
+    font-family: 'Amatic SC', cursive;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+/* Styles for h2 tags inside the small-image-2 section */
+.small-image-2 div h2 {
+    margin: 0;
+    color: #b61f1f;
+    font-size: 2.5em;
+}
+
+/* Additional styles for nested div elements inside the small-image-2 section */
+.small-image-2 div div {
+    width: 30%;
+    float: right;
+}
+
+/* Styles for p tags inside nested div elements of the small-image-2 section */
+.small-image-2 div div p {
+    margin: 0;
+    color: #fddf48;
+    font-size: 1.4em;
+    margin-top: 1em;
+}
+
+/* Styles for the images section */
+.images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+    justify-content: center;
+    margin-top: 5em;
+    font-family: 'Amatic SC', cursive;
+}
+
+/* Styles for the @ symbol */
+.attherate {
+    font-size: 0.6em;
+}
+
+/* Additional styles for .pricecn class */
+.pricecn {
+    font-size: 2em;
+}
+
+/* Styles for the form element */
+form {
+    color: #fddf48;
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Amatic SC', cursive;
+    text-shadow: 1px 1px 2px red, 1px 1px 2px blue;
+}
+
+/* Styles for the name-input section */
+.name-input {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* Styles for labels in the name-input section */
+.name-input label {
+    margin-right: 0.5em;
+}
+
+/* Styles for input fields in the name-input section */
+.name-input input {
+    padding: 0.5em;
+    margin: 0;
+}
+
+/* Styles for p tags inside the pizza-form section */
+.pizza-form div > p {
+    color: #FC7A1E;
+    margin: 0em;
+    font-size: 1.7em;
+    margin-bottom: 0.2em;
+}
+
+/* Additional styles for the second div element inside the pizza-form section */
+.pizza-form div + div p {
+    margin-top: 0.3em;
+}
+
+/* Styles for labels inside the pizza-form section */
+.pizza-form label {
+    margin-right: 0.1em;
+}
+
+/* Styles for input fields inside the pizza-form section */
+.pizza-form input {
+    margin: 0;
+    margin-right: 1em;
+}
+
+/* Styles for the toppings section */
+.toppings {
+    margin-bottom: 1em;
+}
+
+/* Styles for the drinks section */
+.drinks {
+    margin-bottom: 1em;
+}
+
+/* Styles for the info-form section */
+#info-form {
+    color: #fddf48;
+    font-size: 0.5em;
+}
+
+/* Additional styles for the info-form-bottom section */
+#info-form-bottom {
+    color: #fddf48;
+    font-size: 0.5em;
+    margin-bottom: 1.5em;
+}
+
+/* Styles for the location section */
+.location {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+/* Styles for labels inside the location section */
+.location label {
+    margin-right: 0.2em;
+}
+
+/* Styles for labels inside the payment section */
+.payment label {
+    margin-right: 0.2em;
+}
+
+/* Styles for the buttons section */
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+/* Styles for input fields inside the buttons section */
+.buttons input {
+    font-size: 0.6em;
+    font-family: 'Mynerve', cursive;
+    border: 2px solid #b61f1f;
+    padding: 0.2em 0.8em;
+    color: rgb(214, 211, 38);
+    background-color: #FC7A1E;
+    text-shadow: 1px 1px 2px red, 1px 1px 2px blue;
+    transition: color 1s, background-color 0.25s, transform 0.2s;
+}
+
+/* Styles for input fields inside the buttons section on hover */
+.buttons input:hover {
+    cursor: pointer;
+    color: #b61f1f;
+    background-color: #fddf48;
+    transform: translateY(-5px);
+}
+
+/* Styles for the footer section */
+footer {
+    font-family: 'Amatic SC', cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px #b61f1f solid;
+    background-color: #1E2D2F;
+    margin: 0px;
+    padding: 1em;
+}
+
+/* Styles for p tags inside the footer section */
+footer p {
+    margin: 0px;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    color: #FC7A1E;
+}
+
+/* Styles for .footer-heading class */
+.footer-heading {
+    font-family: 'Mynerve', cursive;
+    color: #b61f1f;
+    font-size: 3em;
+    margin: 0px;
+}
+
+/* Styles for .footer-text class */
+.footer-text {
+    font-family: 'Mynerve', cursive;
+    margin-bottom: 0px;
+    font-size: 2em;
+}
+
+/* Styles for links inside the footer-text class */
+.footer-text a {
+    text-decoration: none;
+    color: #fddf48;
+}
+
+/* Styles for links inside the footer-text class on hover */
+.footer-text a:hover {
+    text-decoration: underline;
+}
+
+/* Media Query for screens with width greater than or equal to 1000 pixels */
+@media (min-width: 1000px) {
+    /* Styles for screens with width greater than or equal to 1000 pixels */
+
+    /* Styles for the main-grid section */
+    .main-grid {
+        display: grid; /* Creates a CSS grid container */
+        grid-template-columns: repeat(3, 342px); /* Sets the number of columns and their width */
+        grid-template-rows: repeat(2, 255px); /* Sets the number of rows and their height */
+        gap: 0.5em; /* Sets the gap between grid items */
+        justify-content: center; /* Aligns grid items horizontally at the center */
+        margin-top: 5em; /* Adds top margin for spacing */
+    }
+
+    /* Styles for the big-image section */
+    .big-image {
+        background-image: url(../Images/mm-pizza-more-2023-v2.png); /* Sets the background image */
+        background-position: center; /* Sets the background image position */
+        background-repeat: no-repeat; /* Prevents background image repetition */
+        background-size: cover; /* Scales the background image to cover the container */
+        grid-column: span 2; /* Spans 2 columns in the grid */
+        grid-row: span 2; /* Spans 2 rows in the grid */
+        width: 100%; /* Sets the width to 100% */
+        height: 100%; /* Sets the height to 100% */
+        object-fit: cover; /* Scales the image to cover the container */
+    }
+
+    /* Styles for the cinnanuggets section */
+    .cinnanuggets {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        text-align: center;
+        background-image: url(../Images/cinna_bites.jpg); /* Sets the background image */
+        background-position: center; /* Sets the background image position */
+        background-repeat: no-repeat; /* Prevents background image repetition */
+        background-size: cover; /* Scales the background image to cover the container */
+        width: 929px; /* Sets the width of the container */
+        height: 130px; /* Sets the height of the container */
+        font-size: 3.4em; /* Sets the font size */
+        color: #FC7A1E; /* Sets the text color */
+        margin-bottom: 2em; /* Adds bottom margin for spacing */
+        text-shadow: 3px 3px 4px #1E2D2F; /* Adds text shadow for visual effect */
+    }
+
+    /* Styles for the pizza-combo section */
+    .pizza-combo {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        text-align: center;
+        background-image: url(../Images/DPC_N73_GM_HP_combo.png); /* Sets the background image */
+        background-position: center; /* Sets the background image position */
+        background-repeat: no-repeat; /* Prevents background image repetition */
+        background-size: cover; /* Scales the background image to cover the container */
+        font-size: 1.8em; /* Sets the font size */
+        width: 929px; /* Sets the width of the container */
+        height: 130px; /* Sets the height of the container */
+        margin-bottom: 2em; /* Adds bottom margin for spacing */
+        text-shadow: 3px 2px 5px #1E2D2F; /* Adds text shadow for visual effect */
+    }
+
+    /* Styles for the pizza-combo-container section */
+    .pizza-combo-container {
+        width: 15em; /* Sets the width of the container */
+        text-align: center; /* Aligns the text in the center */
+    }
+
+    /* Styles for p tags inside the pizza-combo section */
+    .pizza-combo p {
+        color: #b61f1f; /* Sets the text color */
+        margin: 0; /* Removes margin */
+        margin-left: 1em; /* Adds left margin for spacing */
+    }
+
+    /* Styles for span elements inside the pizza-combo section */
+    .pizza-combo span {
+        color: #FC7A1E; /* Sets the text color */
+    }
+
+    /* Styles for p tags inside the cinnanuggets section */
+    .cinnanuggets p {
+        margin: 0; /* Removes margin */
+        margin-left: 1em; /* Adds left margin for spacing */
+    }
+
+    /* Styles for span elements inside the cinnanuggets section */
+    .cinnanuggets span {
+        color: #b61f1f; /* Sets the text color */
+    }
+}
+
+/* Media Query for screens with width less than 1000 pixels */
+@media (max-width: 1000px) {
+    /* Styles for screens with width less than 1000 pixels */
+
+    /* Styles for the main-grid section */
+    .main-grid {
+        display: grid; /* Creates a CSS grid container */
+        grid-template-rows: repeat(3, auto); /* Sets the number of rows and their height */
+        gap: 0.5em; /* Sets the gap between grid items */
+        justify-content: center; /* Aligns grid items horizontally at the center */
+        margin-top: 5em; /* Adds top margin for spacing */
+    }
+
+    /* Styles for the big-image section */
+    .big-image {
+        background-image: url(../Images/mm-pizza-more-2023-v2.png); /* Sets the background image */
+        background-position: center; /* Sets the background image position */
+        background-repeat: no-repeat; /* Prevents background image repetition */
+        background-size: cover; /* Scales the background image to cover the container */
+        width: 100%; /* Sets the width to 100% */
+        height: 100%; /* Sets the height to 100% */
+        object-fit: cover; /* Scales the image to cover the container */
+    }
+
+    /* Hide the pizza-combo section for screens with width less than 1000 pixels */
+    .pizza-combo {
+        display: none;
+    }
+
+    /* Hide the cinnanuggets section for screens with width less than 1000 pixels */
+    .cinnanuggets {
+        display: none;
+    }
+
+    /* Styles for the pizza-combo-container section for screens with width less than 1000 pixels */
+    .pizza-combo-container {
+        display: none;
+        width: 15em; /* Sets the width of the container */
+        text-align: center; /* Aligns the text in the center */
+    }
+
+    /* Styles for p tags inside the pizza-combo section for screens with width less than 1000 pixels */
+    .pizza-combo p {
+        color: #b61f1f; /* Sets the text color */
+        margin: 0; /* Removes margin */
+        margin-left: 1em; /* Adds left margin for spacing */
+        display: none; /* Hide the element */
+    }
+
+    /* Styles for span elements inside the pizza-combo section for screens with width less than 1000 pixels */
+    .pizza-combo span {
+        color: #FC7A1E; /* Sets the text color */
+        display: none; /* Hide the element */
+    }
+
+    /* Styles for p tags inside the cinnanuggets section for screens with width less than 1000 pixels */
+    .cinnanuggets p {
+        display: none; /* Hide the element */
+        margin: 0; /* Removes margin */
+        margin-left: 1em; /* Adds left margin for spacing */
+    }
+
+    /* Styles for span elements inside the cinnanuggets section for screens with width less than 1000 pixels */
+    .cinnanuggets span {
+        display: none; /* Hide the element */
+        color: #b61f1f; /* Sets the text color */
+    }
+}
